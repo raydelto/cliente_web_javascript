@@ -1,4 +1,4 @@
-#Cliente WEB escrito con Javascript
+## Cliente WEB escrito con Javascript
 
 Este es un simple ejemplo de como utilizar la funcion fetch contenida de manera predeterminada por los navegadores modernos para obtener data en formato JSON de un servicio WEB y posteriormente desplegarla en una página WEB.
 
