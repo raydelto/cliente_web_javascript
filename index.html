@@ -1,0 +1,20 @@
+<html>
+<head>
+    <script>
+        fetch('https://www.raydelto.org/json.php')
+        .then((respuesta) => {
+            return respuesta.json();
+        } ).then((respuesta) => {
+            document.getElementById('nombre').value = respuesta.name;
+            document.getElementById('apellido').value = respuesta.lastName;
+        })
+    </script>
+</head>
+
+<body>
+    <div id="informacion">
+        <input type="text" id="nombre" value="Cargando..."/>
+        <input type="text" id="apellido" value="Cargando..."/>
+    </div>
+</body>
+</html>
