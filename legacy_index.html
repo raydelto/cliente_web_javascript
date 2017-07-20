@@ -1,0 +1,21 @@
+<html>
+<head>
+    <script>
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET','https://www.raydelto.org/json.php', true);
+        xhr.onload = function() {
+            var respuesta = JSON.parse(xhr.responseText);
+            document.getElementById('nombre').value = respuesta.name;
+            document.getElementById('apellido').value = respuesta.lastName;
+        };
+        xhr.send();
+    </script>
+</head>
+
+<body>
+    <div id="informacion">
+        <input type="text" id="nombre" value="Cargando..."/>
+        <input type="text" id="apellido" value="Cargando..."/>
+    </div>
+</body>
+</html>
